@@ -1,10 +1,107 @@
-.home-page {
-    background: lightcyan;
+/* Reset default margin and padding for body and all its children */
+body {
+  background: linear-gradient(to bottom, darkolivegreen, cornflowerblue);
+  background-size: 100% 200%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+.container {
+  position: relative;
+  z-index: 1;
+  margin: 50px auto;
+  width: 80%;
+  background: linear-gradient(to bottom, #5c3d1f, #9d7044);
+  box-shadow: 0 0 20px 5px #00000080,
+    inset 0 0 10px #43373780;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+/* Center the profile picture */
 .home-page__profile-pic {
-    
-    img {
-        height: 300px;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* Set the profile picture dimensions */
+.home-page__profile-pic img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Set the name and icon alignment */
+.home-page__name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.home-page__name p {
+  font-size: 40px;
+  margin-left: 10px;
+}
+
+/* Set the introduction text alignment */
+.home-page__introduction {
+  margin-top: 40px;
+  padding: 0 20px;
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 18px;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+/* Set the section headers */
+.home-page__summary h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* Set the position and company styling */
+.home-page__summary-experiences-list_position {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.home-page__summary-experiences-list_details {
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* Set the responsibilities styling */
+.home-page__summary-experiences-list_responsibilities {
+  margin-top: 10px;
+  margin-left: 20px;
+  list-style-type: square;
+  font-size: 16px;
+}
+
+/* Set the skills list styling */
+.home-page__summary-skills-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.home-page__summary-skills-list li {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
 }
